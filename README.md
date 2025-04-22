@@ -3,7 +3,7 @@
 
 This repository shares the full Jupyter notebook and supporting materials for my capstone project at Trent University, where I systematically explored how chunk size and top_k hyperparameters affect a Retrieval-Augmented Generation (RAG) pipeline’s accuracy, and assessed the reliability of using LLMs as automated evaluators.
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 RAG-Capstone/
 │
@@ -14,7 +14,7 @@ RAG-Capstone/
 ├── LICENSE                # Open‑source license (MIT)
 └── README.md              # Project overview and instructions
 ```
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.9 or higher
@@ -43,7 +43,7 @@ RAG-Capstone/
     ```
 - Open `notebooks/capstone.ipynb` and run all cells in order.
 
-## 📖 Notebook Contents
+## Notebook Contents
 
 1. Environment Setup: installs packages, configures GPU, and loads the RAG mini-wikipedia dataset.
 2. Preprocessing & Chunking: text cleaning (ftfy), paragraph splitting, and sentence-based chunking functions.
@@ -54,7 +54,7 @@ RAG-Capstone/
 7. Experiment Loops: single-run (run_experiment) and grid-search (run_multiple_experiments) functions, saving timestamped CSV results.
 8. Results Saving: output CSVs stored alongside the notebook for downstream analysis.
 
-## 📝 Key Findings
+## Key Findings
 
 - Optimal Configuration: smaller chunk sizes (50–100 words) and top_k=1 yielded the highest human-rated accuracy (~70%).
 - Evaluator Reliability: the LLaMa-based evaluator agreed with human judgments about 73% of the time (Cohen’s κ = 0.47), highlighting the need for human oversight.
@@ -62,7 +62,7 @@ RAG-Capstone/
 
 > For detailed figures, tables, and statistical analysis, please refer to the report in the resources section of my [website](https://darpanberi.github.io/)
 
-## 📈 Viewing Results
+## Viewing Results
 
 After running experiments, CSV files appear in your working directory, named like:
 `results_chunk100_top1_20250422-171305.csv`
